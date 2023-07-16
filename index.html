@@ -1,68 +1,179 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>achothukten</title>
-  <!-- Bootstrap CSS -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
-  <style>
-    .hero-container {
-      background-color: #EDE6F5;
-      color: #000000;
-      padding: 50px;
-      text-align: center;
-    }
-  </style>
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <style>
+      body {
+        background-color: white;
+        color: black;
+      }
 
-  <header>
-    <!-- Navbar -->
+      .navbar {
+        display: flex;
+        justify-content: center;
+      }
+
+      .navbar-nav {
+        flex-direction: row;
+      }
+
+      .navbar-nav .nav-link {
+        padding: 0 20px;
+      }
+
+      .hero-container {
+        background-color: black;
+        color: white;
+        padding: 50px;
+      }
+
+      .hero-container .row {
+        display: flex;
+        align-items: center;
+      }
+
+      .hero-container .col {
+        flex: 1;
+      }
+
+      .hero-image {
+        max-width: 100%;
+        height: auto;
+      }
+
+      .what-container {
+        background-color: lightgray;
+        padding: 50px;
+      }
+
+      .what-container .row {
+        display: flex;
+        align-items: center;
+      }
+
+      .what-container .col {
+        flex: 1;
+      }
+
+      .what-image {
+        max-width: 100%;
+        height: auto;
+      }
+
+      .additional-container {
+        background-color: black;
+        color: white;
+        padding: 50px;
+      }
+
+      .additional-container .row {
+        display: flex;
+        align-items: center;
+      }
+
+      .additional-container .col {
+        flex: 1;
+      }
+
+      .additional-image {
+        max-width: 100%;
+        height: auto;
+      }
+    </style>
+    <title> learning showcase</title>
+  </head>
+
+  <body>
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
       <div class="container">
-        <a class="navbar-brand" href="#">best meentee</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav ml-auto">
-            <li class="nav-item">
-              <a class="nav-link" href="#">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">About</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Services</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Contact</a>
-            </li>
-          </ul>
-        </div>
+        <ul class="navbar-nav">
+          <li class="nav-item active">
+            <a class="nav-link" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="about.html">About us</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="#">Contact</a>
+          </li>
+        </ul>
       </div>
     </nav>
-  </header>
 
-  <main>
-    <div class="hero-container">
-      <h1>Welcome to Acho Thukten's Meentee</h1>
-      <p>We are all jigs.</p>
-      <img src="IMG-20230711-WA0062 - Shortcut.lnk" alt="Your Image" width="300">
-      <br>
-      <a class="btn btn-warning" href="https://your-url.com">Visit Website</a>
-    </div>
-  </main>
+    <section class="hero-container">
+      <div class="container">
+        <div class="row">
+          <div class="col">
+            <a href="hello.html"
+              ><img src="IMG-20230711-WA0063.jpg" alt="Hero Image" class="hero-image"
+            /></a>
+          </div>
+          <div class="col">
+            <h1>Learning showcase</h1>
+            <p>
+              
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
 
-  <footer class="bg-dark text-light py-3">
-    <div class="container text-center">
-      <p>&copy; 2023 Your Website. All rights reserved.</p>
-    </div>
-  </footer>
+    <section class="what-container">
+      <div class="container">
+        <div class="row">
+          <div class="col">
+            <h2>What are we showcasing</h2>
+            <p>
+              Soap desing <br/>
+              Community project <br />
+              Culture backgrounds<br />
 
-  <!-- Bootstrap JS -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-</body>
+            </p>
+          </div>
+          <div class="col">
+            <img src="1689308410203 (1).jpg" alt="What Image" class="what-image" />
+          </div>
+        </div>
+      </div>
+    </section> 
+
+    <section class="additional-container">
+      <div class="container">
+        <div class="row">
+          <div class="col">
+            <a href="soap.html">
+              <img
+              src="IMG-20230712-WA0004.jpg"
+              alt="Additional Image 2"
+              class="additional-image"
+            />
+            </a>
+            <br />
+            <h5 class="text-center"> Soap Design</h5>
+          </div>
+          <div class="col">
+            <a href="community.html">
+              <img
+              src="eco breaks.jpg"
+              alt="Additional Image 3"
+              class="additional-image"
+            />
+            </a>
+            <br />
+            <h5 class="text-center">community project</h5>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  </body>
 </html>
-
